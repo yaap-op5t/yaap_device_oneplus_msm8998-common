@@ -264,6 +264,8 @@ on post-fs
     chown system system /sys/class/power_supply/bms/set_allow_read_extern_fg_iic
     chown system system /sys/class/power_supply/battery/connect_disable
 
+    write /sys/class/graphics/fb0/idle_time 100
+
 on late-fs
     # Start devices by sysfs trigger
     start init-devstart-sh
