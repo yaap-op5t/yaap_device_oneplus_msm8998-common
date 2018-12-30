@@ -209,6 +209,17 @@ on post-fs
     write /sys/class/graphics/fb0/idle_time 100
 
 on late-fs
+    # Enable boot time fs tuning (ro like system is on sde/f, rw like userdata is on sda)
+    write /sys/block/sda/queue/iostats 0
+    write /sys/block/sda/queue/nr_requests 256
+    write /sys/block/sda/queue/read_ahead_kb 2048
+    write /sys/block/sdf/queue/iostats 0
+    write /sys/block/sdf/queue/nr_requests 256
+    write /sys/block/sdf/queue/read_ahead_kb 2048
+    write /sys/block/sde/queue/iostats 0
+    write /sys/block/sde/queue/nr_requests 256
+    write /sys/block/sde/queue/read_ahead_kb 2048
+
     # Start devices by sysfs trigger
     start init-devstart-sh
 
@@ -492,13 +503,13 @@ on property:sys.boot_completed=1
     write /dev/cpuset/restricted/cpus 0-3
     write /dev/cpuset/camera-daemon/cpus 0-3
 
-    # Override readahead to 128KiB
+    # Disable boot time fs tuning
     write /sys/block/sda/queue/read_ahead_kb 128
-    write /sys/block/sdb/queue/read_ahead_kb 128
-    write /sys/block/sdc/queue/read_ahead_kb 128
-    write /sys/block/sdd/queue/read_ahead_kb 128
-    write /sys/block/sde/queue/read_ahead_kb 128
+    write /sys/block/sda/queue/nr_requests 128
     write /sys/block/sdf/queue/read_ahead_kb 128
+    write /sys/block/sdf/queue/nr_requests 128
+    write /sys/block/sde/queue/read_ahead_kb 128
+    write /sys/block/sde/queue/nr_requests 128
 
     # WDSP FW boot sysfs node used by STHAL
     chown media audio /sys/kernel/wdsp0/boot
