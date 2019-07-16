@@ -171,7 +171,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     media.stagefright.thumbnail.prefer_hw_codecs=true \
     vendor.vidc.debug.level=1 \
-    vendor.swvdec.log.level=1
+    vendor.swvdec.log.level=1 \
+    debug.stagefright.omx_default_rank.sw-audio=1 \
+    debug.stagefright.omx_default_rank=0 \
 
 # NFC
 PRODUCT_PROPERTY_OVERRIDES += \
