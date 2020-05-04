@@ -312,9 +312,6 @@ on post-fs-data
     chown radio radio /data/vendor/radio/db_check_done
     chmod 0660 /data/vendor/radio/db_check_done
 
-    # Trigger WLAN driver load
-    write /sys/kernel/boot_wlan/boot_wlan 1
-
     # Generate wifi mac
     start vendor.wifi-mac-generator
 
