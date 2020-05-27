@@ -331,29 +331,6 @@ on early-boot
     wait_for_prop vendor.qcom.devup 1
 
 on boot
-    # Setup permission for Power HAL
-    chown system system /dev/stune/top-app/schedtune.boost
-    chown system system /sys/class/kgsl/kgsl-3d0/devfreq/min_freq
-    chown system system /sys/class/kgsl/kgsl-3d0/devfreq/max_freq
-    chown system system /sys/class/kgsl/kgsl-3d0/force_rail_on
-    chown system system /sys/class/kgsl/kgsl-3d0/force_clk_on
-    chown system system /sys/class/kgsl/kgsl-3d0/idle_timer
-    chown system system /sys/class/devfreq/soc:qcom,gpubw/min_freq
-    chown system system /sys/devices/soc/soc:qcom,cpubw/devfreq/soc:qcom,cpubw/min_freq
-
-    chmod 0664 /dev/stune/top-app/schedtune.boost
-    chmod 0664 /sys/class/kgsl/kgsl-3d0/devfreq/min_freq
-    chmod 0664 /sys/class/kgsl/kgsl-3d0/devfreq/max_freq
-    chmod 0664 /sys/class/kgsl/kgsl-3d0/force_rail_on
-    chmod 0664 /sys/class/kgsl/kgsl-3d0/force_clk_on
-    chmod 0664 /sys/class/kgsl/kgsl-3d0/idle_timer
-    chmod 0664 /sys/class/devfreq/soc:qcom,gpubw/min_freq
-    chmod 0664 /sys/devices/soc/soc:qcom,cpubw/devfreq/soc:qcom,cpubw/min_freq
-
-    # DT2W Node
-    chown system system /proc/touchpanel/double_tap_enable
-    chmod 0660 /proc/touchpanel/double_tap_enable
-
     chown bluetooth net_bt /sys/class/rfkill/rfkill0/type
     chown bluetooth net_bt /sys/class/rfkill/rfkill0/state
     chown system system /sys/module/msm_core/parameters/polling_interval
@@ -524,17 +501,6 @@ on boot
     write /proc/sys/net/ipv6/conf/default/accept_ra_defrtr 1
 
 on property:vendor.post_boot.parsed=1
-    # Setup permission for Power HAL
-    chown system system /sys/devices/soc/soc:qcom,cpubw/devfreq/soc:qcom,cpubw/bw_hwmon/hyst_trigger_count
-    chown system system /sys/devices/soc/soc:qcom,cpubw/devfreq/soc:qcom,cpubw/bw_hwmon/hist_memory
-    chown system system /sys/devices/soc/soc:qcom,cpubw/devfreq/soc:qcom,cpubw/bw_hwmon/hyst_length
-    chown system system /sys/devices/soc/soc:qcom,cpubw/devfreq/soc:qcom,cpubw/min_freq
-
-    chmod 0664 /sys/devices/soc/soc:qcom,cpubw/devfreq/soc:qcom,cpubw/bw_hwmon/hyst_trigger_count
-    chmod 0664 /sys/devices/soc/soc:qcom,cpubw/devfreq/soc:qcom,cpubw/bw_hwmon/hist_memory
-    chmod 0664 /sys/devices/soc/soc:qcom,cpubw/devfreq/soc:qcom,cpubw/bw_hwmon/hyst_length
-    chmod 0664 /sys/devices/soc/soc:qcom,cpubw/devfreq/soc:qcom,cpubw/min_freq
-
     # Enable PowerHAL hint processing
     setprop vendor.powerhal.init 1
 
