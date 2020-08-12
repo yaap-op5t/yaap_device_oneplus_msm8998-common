@@ -328,6 +328,10 @@ PRODUCT_PACKAGES += \
 # Privapp Whitelist
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/telephony_system-ext_privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml
+    
+# Perf
+PRODUCT_PACKAGES += \
+    libqti-perfd-client
 
 # Power
 PRODUCT_PACKAGES += \
