@@ -219,6 +219,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.hardware.nfc_nci=nqx.default
 
+# Framebuffer
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.surface_flinger.max_frame_buffer_acquired_buffers=3
+
 # QSEE
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.qsee=yes
