@@ -15,7 +15,7 @@
 * along with this program. If not, see <http://www.gnu.org/licenses/>.
 *
 */
-package com.derp.device.DeviceSettings;
+package com.yaap.device.DeviceSettings;
 
 import android.content.Context;
 import androidx.viewpager.widget.PagerAdapter;
