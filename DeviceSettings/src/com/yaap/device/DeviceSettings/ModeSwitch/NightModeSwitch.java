@@ -1,5 +1,5 @@
 /*
-* Copyright (C) 2018 The OmniROM Project
+* Copyright (C) 2017 The OmniROM Project
 *
 * This program is free software: you can redistribute it and/or modify
 * it under the terms of the GNU General Public License as published by
@@ -15,7 +15,7 @@
 * along with this program. If not, see <http://www.gnu.org/licenses/>.
 *
 */
-package com.derp.device.DeviceSettings;
+package com.yaap.device.DeviceSettings;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -24,9 +24,9 @@ import androidx.preference.Preference;
 import androidx.preference.Preference.OnPreferenceChangeListener;
 import androidx.preference.PreferenceManager;
 
-public class OnePlusModeSwitch implements OnPreferenceChangeListener {
+public class NightModeSwitch implements OnPreferenceChangeListener {
 
-    private static final String FILE = "/sys/devices/virtual/graphics/fb0/oneplus_mode";
+    private static final String FILE = "/sys/devices/virtual/graphics/fb0/night_mode";
 
     public static String getFile() {
         if (Utils.fileWritable(FILE)) {
