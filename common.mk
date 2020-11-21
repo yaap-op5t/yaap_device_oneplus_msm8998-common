@@ -216,8 +216,8 @@ PRODUCT_PACKAGES += \
 
 # GPS / Location
 PRODUCT_PACKAGES += \
-    android.hardware.gnss@2.0-impl-qti \
-    android.hardware.gnss@2.0-service-qti \
+    android.hardware.gnss@2.1-impl-qti \
+    android.hardware.gnss@2.1-service-qti \
     libbatching \
     libgeofencing \
     libgnss \
@@ -342,6 +342,7 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 
 # OMX
 PRODUCT_PACKAGES += \
+    libavservices_minijail.vendor \
     libc2dcolorconvert \
     libhypv_intercept \
     libmm-omxcore \
