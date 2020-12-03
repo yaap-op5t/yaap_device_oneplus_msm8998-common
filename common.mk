@@ -432,7 +432,8 @@ PRODUCT_SHIPPING_API_LEVEL := 25
 # Soong
 PRODUCT_SOONG_NAMESPACES += \
     device/oneplus/msm8998-common \
-    hardware/google/pixel
+    hardware/google/pixel \
+    hardware/google/interfaces
 
 # Tetheroffload
 PRODUCT_PACKAGES += \
