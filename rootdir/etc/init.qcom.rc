@@ -339,8 +339,11 @@ on boot
     # Wifi firmware reload path
     chown wifi wifi /sys/module/wlan/parameters/fwpath
 
-    start vendor.qcrild
-    start vendor.qcrild2
+    # Enable qcrild and data services
+    enable vendor.qcrild
+    enable vendor.qcrild2
+    enable vendor.dataqti
+    enable vendor.dataadpl
 
     # Vibrator permissions
     chown system system /sys/class/leds/vibrator/vmax_mv
