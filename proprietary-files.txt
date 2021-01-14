@@ -1013,9 +1013,9 @@ vendor/bin/qrtr-ns
 vendor/lib/libqrtr.so
 vendor/lib64/libqrtr.so
 
-# Radio (from LA.UM.8.2.r1-06600-sdm660.0)
-product/framework/qti-telephony-common.jar:system_ext/framework/qti-telephony-common.jar|14e32b1cb0fdc9d7802414e95e41376499b51b11
--product/priv-app/ims/ims.apk:system_ext/priv-app/ims/ims.apk|7aff4613e75dfe90363409cf649e2a3e09469921
+# Radio (from LA.QSSI.11.0.r1-09400-qssi.0)
+product/framework/qti-telephony-common.jar:system_ext/framework/qti-telephony-common.jar|710406e01836b558c802ba4960fa59f31545389e
+-product/priv-app/ims/ims.apk:system_ext/priv-app/ims/ims.apk|cccc15a4fbaff0f412e09e63744fc95c3c339da8
 
 # Radio
 etc/permissions/qcnvitems.xml:product/etc/permissions/qcnvitems.xml
