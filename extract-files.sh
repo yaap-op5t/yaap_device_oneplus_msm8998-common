@@ -63,9 +63,6 @@ function blob_fixup() {
         product/etc/permissions/qcnvitems.xml )
             sed -i "s/\/system\/framework\//\/system\/product\/framework\//g" "${2}"
             ;;
-        product/etc/permissions/vendor.qti.hardware.factory.xml )
-            sed -i "s/\/system\/framework\//\/system\/product\/framework\//g" "${2}"
-            ;;
         product/etc/permissions/vendor-qti-hardware-sensorscalibrate.xml )
             sed -i "s/\/system\/framework\//\/system\/product\/framework\//g" "${2}"
             ;;
