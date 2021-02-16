@@ -176,7 +176,6 @@ TARGET_USES_MKE2FS := true
 
 # Power
 TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/double_tap_enable"
-TARGET_USES_INTERACTION_BOOST := true
 
 # Properties
 BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
