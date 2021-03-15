@@ -459,6 +459,7 @@ on property:vendor.post_boot.parsed=1
     setprop vendor.powerhal.init 1
 
 on charger
+    start dashd
     setprop sys.usb.configfs 1
 
     # Enable UFS powersaving
