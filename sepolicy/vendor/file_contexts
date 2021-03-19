@@ -59,6 +59,7 @@
 
 # Power HAL
 /(vendor|system/vendor)/bin/hw/android\.hardware\.power-service\.oneplus_msm8998-libperfmgr               u:object_r:hal_power_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.power\.stats@1\.0-service\.mock                         u:object_r:hal_power_stats_default_exec:s0
 
 # Power supply
 /sys/devices/soc/.*ssusb/power_supply/usb(/.*)?                 u:object_r:sysfs_usb_supply:s0
