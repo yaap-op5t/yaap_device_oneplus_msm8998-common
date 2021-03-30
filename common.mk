@@ -447,9 +447,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service.basic
 
-# Vendor properties
--include $(LOCAL_PATH)/vendor_prop.mk
-
 PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 
 # Verity
