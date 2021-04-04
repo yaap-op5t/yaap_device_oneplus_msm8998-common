@@ -35,6 +35,9 @@ on early-init
     write /proc/sys/kernel/sched_boost 1
 
 on init
+    # Change permissions for diag lib.
+    chmod 0666 /dev/diag
+
     write /sys/module/qpnp_rtc/parameters/poweron_alarm 1
 
     # Disable UFS powersaving
