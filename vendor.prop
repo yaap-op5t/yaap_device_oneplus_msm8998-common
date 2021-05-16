@@ -79,7 +79,7 @@ vendor.gralloc.disable_wb_ubwc=1
 vendor.gralloc.enable_fb_ubwc=1
 
 # Media
-vendor.vidc.debug.level=1
+debug.stagefright.omx_default_rank=0
 
 # QCOM
 ro.vendor.qti.va_aosp.support=1
