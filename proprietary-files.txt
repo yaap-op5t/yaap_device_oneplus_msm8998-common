@@ -415,15 +415,15 @@ vendor/etc/qdcm_calib_data_samsung_s6e3fa6_1080p_cmd_mode_dsi_panel.xml
 # DPM - from jasmine V11.0.15.0.QDIMIXM
 product/bin/dpmd:system_ext/bin/dpmd|49caa8e7d8af8055efdd7ebc0d7f7d67bc600041
 product/etc/dpm/dpm.conf:system_ext/etc/dpm/dpm.conf|95e27da8c989e96c6faea6f0697bce11955b62a5
-product/etc/init/dpmd.rc:system_ext/etc/init/dpmd.rc|7f95195a89fddce06b93006a737701270e91f669
-product/etc/permissions/com.qti.dpmframework.xml:system_ext/etc/permissions/com.qti.dpmframework.xml|4613f8b8629d0b823e6aaab45d399ac30da06c09
-product/etc/permissions/dpmapi.xml:system_ext/etc/permissions/dpmapi.xml|0991b3069308620cfcad53873e9f09af181b981d
+product/etc/init/dpmd.rc:system_ext/etc/init/dpmd.rc|f061bb76ae844f6df04c1d78caf00cf29a41b112
+product/etc/permissions/com.qti.dpmframework.xml:system_ext/etc/permissions/com.qti.dpmframework.xml|ab94e634782b7a2e833ce129eda74cb9333ed3f7
+product/etc/permissions/dpmapi.xml:system_ext/etc/permissions/dpmapi.xml|697c88d7ebef6232ef214b17b4023bbb3ff4e625
 product/framework/com.qti.dpmframework.jar:system_ext/framework/com.qti.dpmframework.jar|e39a7e06af2d1e95a3724c19c36b8716277f53a1
 product/framework/dpmapi.jar:system_ext/framework/dpmapi.jar|4696df9793ad676b305d53b5d7ce65ecf74771ad
 product/lib64/com.qualcomm.qti.dpm.api@1.0.so:system_ext/lib64/com.qualcomm.qti.dpm.api@1.0.so|a763bb1bbeecb84723bff6f547a3b23fab68dee3
 product/lib64/libdpmctmgr.so:system_ext/lib64/libdpmctmgr.so|3d4b87a4937caf3a8d276f48a4f0dc2cad246c5b
 product/lib64/libdpmfdmgr.so:system_ext/lib64/libdpmfdmgr.so|e809155312a05d83b323ab0be64cb393d936e52a
-product/lib64/libdpmframework.so:system_ext/lib64/libdpmframework.so|8fd037eb8740a468a67c78e7fa01c69b1ba3fd2a|9f8fa8b5fbb3d1c41f497d538943841f5c9f48b7
+product/lib64/libdpmframework.so:system_ext/lib64/libdpmframework.so|9f8fa8b5fbb3d1c41f497d538943841f5c9f48b7
 product/lib64/libdpmtcm.so:system_ext/lib64/libdpmtcm.so|71a3d624602807f6fa6cbdb3a489efe9e93de634
 -product/priv-app/dpmserviceapp/dpmserviceapp.apk:system_ext/priv-app/dpmserviceapp/dpmserviceapp.apk|9fd873c5330c03c62dfdeb6540b5984588295319
 vendor/bin/dpmQmiMgr|d536096b310a2d3f30a683c1bdcad8658db1ba52
@@ -511,7 +511,7 @@ vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
 vendor/lib/hw/gatekeeper.msm8998.so
 vendor/lib64/hw/gatekeeper.msm8998.so
 
-# GPS
+# GPS - from LA.UM.9.6.2.r1-02800-89xx.0
 system_ext/etc/permissions/com.qti.location.sdk.xml|fac5922b978d83a00cd9ec0ddcf2c5d7ab26d492
 system_ext/etc/permissions/izat.xt.srv.xml|e7dddfa669a19e5f300641f695f563fdf22897c0
 system_ext/framework/com.qti.location.sdk.jar|ec086ad0899a1cb98eb506723513cb3776f51a70
@@ -524,7 +524,6 @@ vendor/bin/xtra-daemon|dba903f7414a945a74a9f2036aba69e7e4e7b04a
 vendor/bin/xtwifi-client|8c4c21cd92611b0a1ff621a2da159c778bd1d7d7
 vendor/bin/xtwifi-inet-agent|f805841e5c8ca3b0af620486a64a37148daa0980
 -vendor/etc/vintf/manifest/vendor.qti.gnss@4.0-service.xml|6514b13f55abc0acc28e004c35ff93fb972d61a9
-vendor/etc/xtra_root_cert.pem|f55a31ec4d9cf8ce2724acadecf00c779f8767db
 vendor/lib64/hw/vendor.qti.gnss@4.0-impl.so|1f72539f1e36b4b8ccdba84d11b454f0cfe1e6f7
 vendor/lib64/libcdfw_remote_api.so|dc7deb7618f05907ecfd2c3004bb3e0c39ec8522
 vendor/lib64/libcdfw.so|8d8265215a10c09390038c905fd7967081fbbffb
@@ -578,7 +577,6 @@ vendor/lib64/libbccQTI.so|35c8a31625d47110b984ccdafd7e2f64eebffa23
 vendor/lib64/libC2D2.so|6f654c9bfc9f246b4fa015feb19a787234906f81
 vendor/lib64/libc2d30_bltlib.so|c191be93eac34b27e6515163d64a5f375784cfc2
 vendor/lib64/libCB.so|0f108fa6772c3ca9e5c1208a04677b1715de6477
-vendor/lib64/libfastcvopt.so|57bba365a4f1e4465580a71c9cb121e282127be6
 vendor/lib64/libgsl.so|b708bdf03dde86f3214060b93a8a0ca56196e1cb
 vendor/lib64/libllvm-glnext.so|78bb8d245478e212412e34c49eb1120e875cd0b9
 vendor/lib64/libllvm-qcom.so|5b9c69743b6563094fb6879135c32e29acaccafa
@@ -599,7 +597,6 @@ vendor/lib/libC2D2.so|d1d61bb2f808d6674df0ba488fc21fc343d76448
 vendor/lib/libc2d30_bltlib.so|8b322e28528cb8b809583b8993ab721ddf77d262
 vendor/lib/libCB.so|1388b73a0cb6c217ec1ccaffa551d3b11223690b
 vendor/lib/libeglc2d.so|c2d96ee60c2b86954f26a34aedb7bdadf7f409eb
-vendor/lib/libfastcvopt.so|8a6e46acd3c8d510f7554a09fc5b82bb09dec23a
 vendor/lib/libgsl.so|7ca8850220224f7fd3e98d0afa305d465c95a0b8
 vendor/lib/libllvm-glnext.so|ba7c741f5c57a6c3fc5f45b39ec395958e22ae33
 vendor/lib/libllvm-qcom.so|d8dac9efbecb3f9cd18c2fc3fb5eeae8f7ee711b
