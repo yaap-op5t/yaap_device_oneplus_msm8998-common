@@ -170,7 +170,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     vendor.display.config@1.9 \
-    vendor.display.config@1.9_vendor
+    vendor.display.config@1.9.vendor
 
 # Dex
 PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := verify
