@@ -61,20 +61,20 @@ fi
 function blob_fixup() {
     case "${1}" in
         product/etc/permissions/qcnvitems.xml )
-            sed -i "s/\/system\/framework\//\/system\/product\/framework\//g" "${2}"
+            sed -i "s|/system/framework/|/system/product/framework/|g" "${2}"
             ;;
         product/etc/permissions/vendor-qti-hardware-sensorscalibrate.xml )
-            sed -i "s/\/system\/framework\//\/system\/product\/framework\//g" "${2}"
+            sed -i "s|/system/framework/|/system/product/framework/|g" "${2}"
             ;;
         system_ext/etc/init/dpmd.rc)
-            sed -i "s/\/system\/product\/bin\//\/system\/system_ext\/bin\//g" "${2}"
+            sed -i "s|/system/product/bin/|/system/system_ext/bin/|g" "${2}"
             ;;
         system_ext/etc/permissions/com.qti.dpmframework.xml | system_ext/etc/permissions/dpmapi.xml | \
         system_ext/etc/permissions/qcrilhook.xml | system_ext/etc/permissions/telephonyservice.xml )
-            sed -i "s/\/product\/framework\//\/system_ext\/framework\//g" "${2}"
+            sed -i "s|/product/framework/|/system_ext/framework/|g" "${2}"
             ;;
         system_ext/lib64/libdpmframework.so )
-            sed -i "s/libhidltransport.so/libcutils-v29.so\x00\x00\x00/" "${2}"
+            sed -i "s|libhidltransport.so|libcutils-v29.so\x00\x00\x00|" "${2}"
             ;;
         lib/libwfdmmsink.so)
             "${PATCHELF}" --add-needed "libshim_wfdmmsink.so" "${2}"
@@ -83,7 +83,7 @@ function blob_fixup() {
 	    "${PATCHELF}" --remove-needed "android.hidl.base@1.0.so" "${2}"
             ;;
         vendor/etc/permissions/com.fingerprints.extension.xml )
-            sed -i "s/\/system\/framework\//\/vendor\/framework\//g" "${2}"
+            sed -i "s|/system/framework/|/vendor/framework/|g" "${2}"
             ;;
     esac
 }
