@@ -26,7 +26,7 @@ import android.provider.Settings;
 import android.text.TextUtils;
 import androidx.preference.PreferenceManager;
 
-import com.yaap.device.DeviceSettings.TouchscreenGestureSettings;
+import com.yaap.device.DeviceSettings.ModeSwitch.*;
 
 public class Startup extends BroadcastReceiver {
 

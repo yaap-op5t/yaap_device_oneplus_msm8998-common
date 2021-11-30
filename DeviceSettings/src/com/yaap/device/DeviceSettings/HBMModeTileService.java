@@ -17,7 +17,6 @@
 */
 package com.yaap.device.DeviceSettings;
 
-import android.annotation.TargetApi;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
@@ -27,7 +26,8 @@ import androidx.preference.PreferenceManager;
 
 import java.lang.IllegalArgumentException;
 
-@TargetApi(24)
+import com.yaap.device.DeviceSettings.ModeSwitch.HBMModeSwitch;
+
 public class HBMModeTileService extends TileService {
 
     private Intent mHbmIntent;
@@ -62,7 +62,7 @@ public class HBMModeTileService extends TileService {
     @Override
     public void onClick() {
         super.onClick();
-        boolean enabled = HBMModeSwitch.isCurrentlyEnabled(this);
+        boolean enabled = HBMModeSwitch.isCurrentlyEnabled();
         // NOTE: reverse logic, enabled reflects the state before press
         Utils.writeValue(HBMModeSwitch.getFile(), enabled ? "0" : "5");
         if (!enabled) {
@@ -74,7 +74,7 @@ public class HBMModeTileService extends TileService {
     }
 
     private void updateState() {
-        boolean enabled = HBMModeSwitch.isCurrentlyEnabled(this);
+        boolean enabled = HBMModeSwitch.isCurrentlyEnabled();
         if (!enabled) tryStopService();
         getQsTile().setState(enabled ? Tile.STATE_ACTIVE : Tile.STATE_INACTIVE);
         getQsTile().updateTile();

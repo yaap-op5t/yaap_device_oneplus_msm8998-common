@@ -10,10 +10,9 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
-    <PreferenceCategory
-        android:key="graphics"
-        android:title="@string/display_title">
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@strings/device_title">
 
         <SwitchPreference
             android:key="dc"
@@ -51,7 +50,6 @@
                     android:targetPackage="com.yaap.device.DeviceSettings"
                     android:targetClass="com.yaap.device.DeviceSettings.TouchscreenGestureSettings" />
         </Preference>
-    </PreferenceCategory>
 
     <PreferenceCategory
         android:key="slider"
