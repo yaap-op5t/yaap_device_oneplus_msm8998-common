@@ -31,6 +31,7 @@ import androidx.preference.PreferenceCategory;
 import androidx.preference.PreferenceFragment;
 import androidx.preference.SwitchPreference;
 import androidx.preference.TwoStatePreference;
+
 import com.yaap.device.DeviceSettings.ModeSwitch.DCModeSwitch;
 import com.yaap.device.DeviceSettings.ModeSwitch.HBMModeSwitch;
 
