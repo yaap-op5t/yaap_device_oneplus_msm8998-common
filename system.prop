@@ -21,6 +21,9 @@ persist.data.iwlan.enable=true
 persist.vendor.data.iwlan.enable=true
 persist.vendor.data.mode=concurrent
 
+# Disable remote keyguard animation
+persist.wm.enable_remote_keyguard_animation=0
+
 # DRM
 drm.service.enabled=true
 
