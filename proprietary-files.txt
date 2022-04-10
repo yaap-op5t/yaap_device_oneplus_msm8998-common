@@ -343,7 +343,7 @@ system_ext/lib64/vendor.qti.hardware.mwqemadapter@1.0.so|ededac47c5254cebd530034
 system_ext/lib64/vendor.qti.hardware.slmadapter@1.0.so|70635ca85b20a3fa2ee7e7f62613337561b48f66
 system_ext/lib64/vendor.qti.latency@2.0.so|52058b376a37c99bfe67da8e83ab36a1e72972b1
 system_ext/lib64/vendor.qti.latency@2.1.so|18bffeadefcbbb5f3e1b512b0cee4cb39af27b72
--vendor/app/CACertService/CACertService.apk;PRESIGNED|a3a46b9b30f905f8acbb57322e5b20281fdcad83
+-vendor/app/CACertService/CACertService.apk|a3a46b9b30f905f8acbb57322e5b20281fdcad83
 -vendor/app/CneApp/CneApp.apk|13bdf6ba5637d3df3d6d9fb0017f9f56ddc620e7
 -vendor/app/IWlanService/IWlanService.apk|a189d8879b4cf5026db2d6a80abb3a1319e38f0c
 vendor/bin/cnd|07829b294562037b779a6e7244972d7c24e758a5
