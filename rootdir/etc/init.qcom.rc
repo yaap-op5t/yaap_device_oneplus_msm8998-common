@@ -350,7 +350,7 @@ on boot
     chmod 0660 /sys/class/leds/vibrator/vmax_mv
 
 on charger
-    start dashd
+    start vendor.dashd
     start vendor.power_off_alarm
     setprop sys.usb.configfs 1
 
@@ -428,11 +428,10 @@ service charger /system/bin/charger
     capabilities SYS_BOOT
     seclabel u:r:charger:s0
 
-service dashd /vendor/xbin/dashd
-     class core
-     critical
-     seclabel u:r:dashd:s0
-     group root system
+service vendor.dashd /vendor/bin/dashd
+    class core
+    critical
+    group root system
 
 service init-devstart-sh /vendor/bin/init.devstart.sh
     class core
