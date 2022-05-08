@@ -22,9 +22,6 @@ vendor.qcom.devup                      u:object_r:vendor_device_prop:s0
 # Mediacodec
 gpu.stats.debug.level                  u:object_r:vendor_video_prop:s0
 
-#MWQEM
-persist.vendor.mwqem.                  u:object_r:vendor_mwqem_prop:s0
-
 # Param HAL
 ro.boot.msz                            u:object_r:vendor_param_prop:s0
 ro.boot.prmfc                          u:object_r:vendor_param_prop:s0
