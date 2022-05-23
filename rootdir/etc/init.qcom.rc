@@ -441,9 +441,10 @@ service vendor.dashd /vendor/bin/dashd
     group root system
 
 service init-devstart-sh /vendor/bin/init.devstart.sh
-    class core
+    class main
     user root
     group root radio
+    disabled
     oneshot
 
 service init-radio-sh /vendor/bin/init.radio.sh
