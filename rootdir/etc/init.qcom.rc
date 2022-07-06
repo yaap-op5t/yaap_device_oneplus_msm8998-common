@@ -405,11 +405,6 @@ on property:sys.boot_completed=1
     write /dev/cpuset/system-background/cpus 0-3
     write /dev/cpuset/restricted/cpus 0-3
 
-    # Enable input boost configuration
-    # simon.ma+@2018/09/28,modify the input_boost_freq and input_boost_ms to make the anim smooth
-    write /sys/module/cpu_boost/parameters/input_boost_freq "0:1036800 4:1056000"
-    write /sys/module/cpu_boost/parameters/input_boost_ms 450
-
     # Tune FS for runtime
     write /sys/block/sda/queue/read_ahead_kb 128
     write /sys/block/sdf/queue/read_ahead_kb 128
